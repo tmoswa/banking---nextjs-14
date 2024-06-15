@@ -1,9 +1,25 @@
 import HeaderBox from "@/components/HeaderBox";
+import RightSideBar from "@/components/RightSideBar";
 import TotalBalanceBox from "@/components/TotalBalanceBox";
 import React from "react";
 
 const Home = () => {
-  const loggedIn = { firstName: "Timothy" };
+  const loggedIn = {
+    $id: "1",
+    email: "timothy@softpala.com",
+    city: "",
+    address: "",
+    address1: "",
+    state: "",
+    postalCode: "",
+    dateOfBirth: "",
+    ssn: "",
+    userId: "2",
+    dwollaCustomerUrl: "",
+    dwollaCustomerId: "",
+    firstName: "Timothy",
+    lastName: "Moswa",
+  };
   return (
     <section className="home">
       <div className="home-content">
@@ -22,7 +38,16 @@ const Home = () => {
 
           />
         </header>
+
+        RECENT TRANSACTIONS
+
       </div>
+      <RightSideBar 
+      user={loggedIn}
+      transactions={[]}
+      banks={[{currentBalance:124.50},
+        {currentBalance:184.50}]}
+      />
     </section>
   );
 };

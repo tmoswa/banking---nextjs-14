@@ -50,7 +50,11 @@ const SideBar = ({ user }: SiderbarProps) => {
             </Link>
           );
         })}
+        USER
       </nav>
+
+      Footer
+
     </section>
   );
 };
