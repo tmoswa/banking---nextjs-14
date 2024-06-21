@@ -11,7 +11,7 @@ const TotalBalanceBox = ({
   return (
     <div>
       <section className="total-balance">
-        <div className="total-balance-chart" >
+        <div className="total-balance-chart1" >
           <DoughnutChart accounts={accounts}/>
           </div>
         <div className="flex flex-col gap-6">
